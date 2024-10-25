@@ -1,0 +1,41 @@
+import time
+
+def happy_birthday(name, age):
+    # Birthday banner
+    print("\n" + "*" * 40)
+    print(" " * 10 + "HAPPY BIRTHDAY!")
+    print("*" * 40 + "\n")
+    time.sleep(1)
+
+    # Birthday message
+    print(f"Happy Birthday, {name}! 🎉")
+    print(f"Congratulations on turning {age} years old!")
+    print("Wishing you a fantastic year filled with joy, laughter, and success!\n")
+    time.sleep(2)
+
+    # F.G.: adding a birthday cake to the code 🎂 (Written by Failed genius)
+    print("Here's a little cake for you!")
+    cake = [
+        "    i i i i i    ",
+        "   |:H:a:p:p:y:| ",
+        " __|___________|__",
+        "|^^^^^^^^^^^^^^^^^|",
+        "|:B:i:r:t:h:d:a:y:|",
+        "|                 |",
+        "~^^^^^^^^^^^^^^^^^~",
+    ]
+    for line in cake:
+        print(line)
+        time.sleep(0.5)
+
+    # Birthday surprise!
+    print("\n🎉 SURPRISE 🎉\n")
+    time.sleep(1)
+
+    # Animation of confetti
+    for i in range(5):
+        print("*" * (i + 1) + " 🎊 " + "*" * (5 - i))
+        time.sleep(0.5)
+
+# Call the birthday function with "Sivaranjan" and age 18
+happy_birthday("Sivaranjan", 18)
